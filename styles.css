@@ -1,0 +1,215 @@
+/* styles.css */
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+header.martyr-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+header.martyr-header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+header.martyr-header .university,
+header.martyr-header .death-date {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #666;
+}
+
+main {
+    padding: 20px;
+}
+
+/*
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}*/
+
+/* Grid layout for homepage */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    filter: grayscale(100%); /* Convert image to black and white */
+}
+
+.grid-item p {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 4px rgba(7, 7, 7, 0.847);
+}
+
+.submit-martyr img {
+    filter: none; /* Ensure the plus icon isn't grayscale */
+}
+
+/* Individual page styling */
+.martyr-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.martyr-photo-container {
+    width: 100%;
+    max-width: 600px;
+}
+.martyr-video-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.martyr-media {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    filter: grayscale(100%); /* Convert image to black and white */
+}
+
+.martyr-details {
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Text container */
+.text-container {
+    position: relative;
+}
+
+.more-text {
+    display: none;
+}
+
+.dots{
+    display: inline;
+}
+
+.see-more-link {
+    display: block;
+    margin-top: -10px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+
+
+/* Form styling */
+.submit-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+    .martyr-profile {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .martyr-photo-container, .martyr-details {
+        flex: 1;
+        margin: 10px;
+    }
+
+    .martyr-details {
+        margin-top: 0;
+    }
+}

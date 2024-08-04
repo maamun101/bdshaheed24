@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Martyr</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Add a Martyr</h1>
+    </header>
+    <main>
+        <form class="submit-form" action="/submit" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Name of the Martyr:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="university">University:</label>
+                <input type="text" id="university" name="university" required>
+            </div>
+            <div class="form-group">
+                <label for="death-date">Death Date:</label>
+                <input type="date" id="death-date" name="deathDate" required>
+            </div>
+            <div class="form-group">
+                <label for="photo">Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="video">Video:</label>
+                <input type="file" id="video" name="video" accept="video/*" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        
+    </main>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<div class="martyr-details">
+    <!-- details -->
+    <p><strong>স্মৃতিচারণ ১:</strong> </p>
+    <div class="text-container">
+        <p class="text-content">
+            short description <span class="dots"> ...</span> 
+            <span class="more-text"> more text
+            </span>
+        </p>
+        <a href="javascript:void(0)" class="see-more-link" onclick="toggleText()">Read more</a>
+    </div>
+</div>
+<script src="./main.js"></script>
+
+
+
